@@ -4,11 +4,12 @@ import Fcomponent from './Fcomponent'
 
 
 class Ccomponent extends Component {
+
     constructor(props) {
         super(props)
     
         this.state = {
-            name: 'кнопку не нажал'
+            name: 'ты НЕ купил эти педали'
         };
 
         this.updateData = this.updateData.bind(this);
@@ -23,7 +24,11 @@ class Ccomponent extends Component {
     render() {
         return(
             <div>
-               <p>Состояние: {this.state.name}</p>
+               <p>{this.state.name}</p>
+
+               <img src="https://static.rendez-vous.ru/files/catalog_models/resize_640x630/1/1868764_krossovki_ash_addict_belyy_kozha_natural_naya.JPG" alt="image name"/>
+                <p>Купить педали</p>
+                <p>Цена: 40 гривень!</p>
                <Fcomponent updateData={this.updateData}/>
             </div>
         )
