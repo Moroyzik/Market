@@ -11,9 +11,6 @@ const Product = ({ imgLink, price, name, handleUpdateData, id, isChecked }) => {
 
       <p>Цена: {price} гривен</p>
 
-      <input type="checkbox" checked={isChecked} onChange={() => {}} />
-      <label>продукт в корзине</label>
-
       <button
         type="button"
         className="btn btn-primary"
